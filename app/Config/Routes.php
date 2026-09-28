@@ -12,3 +12,6 @@ $routes->get('auth/logout', 'Auth::logout');
 $routes->get('admin', 'Admin::index');
 $routes->get('admin/view_records', 'Admin::view_records');
 $routes->get('admin/view_records/(:any)', 'Admin::view_records/$1');
+$routes->get('users', 'Users::index');
+$routes->get('users/new', 'Users::new');
+$routes->post('users/create', 'Users::create');
